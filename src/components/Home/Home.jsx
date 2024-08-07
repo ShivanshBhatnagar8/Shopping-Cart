@@ -1,5 +1,6 @@
 import styles from "./Home.module.css";
 import { Link } from "react-router-dom";
+import heroImage from "/src/assets/img/hero.jpg";
 function Home() {
   return (
     <>
@@ -23,7 +24,7 @@ function Home() {
           </div>
           <img
             className={styles.heroImg}
-            src="./src/assets/img/hero.jpg"
+            src={heroImage}
             alt="Image of a lady with clothes"
           />
         </div>
