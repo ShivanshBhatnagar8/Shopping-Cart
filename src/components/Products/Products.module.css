@@ -1,0 +1,115 @@
+.productContainer {
+  display: grid;
+  padding: 2rem 2rem;
+  margin-top: 1.4rem;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1.4rem;
+}
+.productImg {
+  width: 110px;
+  height: 100px;
+}
+.card {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  background-color: #ffffff7e;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.productName {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.price {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.cardBtn {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid black;
+  transition: all 0.1s;
+  padding: 1.2rem 1.2rem;
+  cursor: pointer;
+}
+.cardBtn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.btnContainer {
+  display: flex;
+}
+.quantityBtn {
+  padding: 0.5rem 1rem;
+}
+input {
+  text-align: center;
+}
+.errorMsgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.errorMsg {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.quantityMessage {
+  font-size: 1.4rem;
+  color: red;
+  font-weight: 400;
+  height: 1.7rem;
+}
+
+@media (max-width: 1050px) {
+  .productContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .productName {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+  .quantityMessage {
+    font-size: 1.2rem;
+  }
+  .errorMsgContainer {
+    height: 40vh;
+  }
+  .errorMsg {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 900px) {
+  .productContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .productContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .productName {
+    font-size: 1.2rem;
+  }
+  .price {
+    font-size: 1.2rem;
+  }
+  .quantityMessage {
+    font-size: 1.2rem;
+  }
+  .errorMsgContainer {
+    height: 30vh;
+  }
+  .errorMsg {
+    font-size: 1rem;
+  }
+}
