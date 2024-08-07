@@ -1,0 +1,13 @@
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.errorText {
+  font-size: 1.4rem;
+}
