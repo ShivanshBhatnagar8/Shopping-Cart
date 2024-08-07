@@ -1,0 +1,149 @@
+.container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+  margin-top: 1.2rem;
+}
+.home {
+  width: 80%;
+  display: flex;
+  padding: 2rem 2rem;
+}
+.homeText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-self: center;
+}
+h1 {
+  font-size: 3.6rem;
+}
+.heroText {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 90%;
+}
+.buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.4rem;
+}
+.getStartedBtn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 1.2rem 2.6rem;
+  font-size: 1.6rem;
+  transition: all 0.1s ease-in;
+  font-weight: 400;
+  border: 1px solid #000;
+}
+.getStartedBtn:hover {
+  color: #000;
+  background-color: #fff;
+}
+.cartBtn {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 1.2rem 2.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.heroImg {
+  width: 40%;
+  clip-path: polygon(
+    46% 0,
+    100% 14%,
+    87% 38%,
+    100% 70%,
+    90% 91%,
+    50% 100%,
+    0 100%,
+    18% 71%,
+    0 37%,
+    8% 12%
+  );
+  margin: 0 auto;
+}
+
+@media (max-width: 1370px) {
+  .home {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.4rem !important;
+  }
+  .heroText {
+    font-size: 1.6rem;
+  }
+
+  .getStartedBtn {
+    font-size: 1.6rem;
+  }
+  .cartBtn {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 850px) {
+  h1 {
+    font-size: 1.4rem !important;
+  }
+  .heroText {
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .getStartedBtn {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+  }
+  .cartBtn {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    margin-top: 1rem;
+    padding: 0px;
+  }
+  .home {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .homeText {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.4rem !important;
+    margin: 0 auto;
+  }
+  .heroText {
+    font-size: 1rem;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  .getStartedBtn {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+    margin: 0 auto;
+  }
+  .cartBtn {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+    margin: 0 auto;
+  }
+  .heroImg {
+    width: 80%;
+    clip-path: none;
+    border-radius: 2rem;
+  }
+}
