@@ -94,9 +94,7 @@
   .cartItemCount {
     left: 90%;
   }
-  .links {
-    width: 60%;
-  }
+  
 }
 @media (max-width: 450px) {
   .cartItemCount {
