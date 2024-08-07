@@ -1,0 +1,108 @@
+.nav {
+  background: black;
+  display: flex;
+  padding: 2rem 2rem;
+  justify-content: space-between;
+}
+.logo {
+  width: 10%;
+}
+.links {
+  align-self: center;
+  display: flex;
+  gap: 4rem;
+}
+.link {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: 0.4s;
+  background-size: 0%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#fff, #fff);
+  padding: 0.6rem 1rem;
+  position: relative;
+}
+.link:hover {
+  color: black;
+  background-size: 100%;
+}
+.cartItemCount {
+  width: 20px;
+  height: 20px;
+  color: black;
+  position: absolute;
+  left: 95%;
+  top: 6.6%;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+@media (max-width: 1440px) {
+  .cartItemCount {
+    top: 4.6%;
+    left: 94%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cartItemCount {
+    left: 93%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cartItemCount {
+    left: 93%;
+    top: 2%;
+  }
+}
+@media (max-width: 950px) {
+  .cartItemCount {
+    top: 1.6%;
+    left: 92%;
+  }
+}
+@media (max-width: 800px) {
+  .link {
+    font-size: 1.4rem;
+  }
+  .links {
+    gap: 2rem;
+  }
+  .cartItemCount {
+    width: 15px;
+    height: 15px;
+    left: 93%;
+    top: 2.5%;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    width: 20%;
+  }
+  .cartItemCount {
+    left: 90%;
+    top: 4.5%;
+  }
+}
+@media (max-width: 500px) {
+  .cartItemCount {
+    left: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .cartItemCount {
+    left: 88%;
+    top: 3%;
+  }
+}
+@media (max-width: 400px) {
+  .cartItemCount {
+    left: 86%;
+  }
+}
