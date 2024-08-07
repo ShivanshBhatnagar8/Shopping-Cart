@@ -14,7 +14,7 @@ function App() {
   arr = cartProducts;
   async function fetchProducts() {
     try {
-      let data = await fetch("https://fakestoreapi.com/products/123");
+      let data = await fetch("https://fakestoreapi.com/products");
       let result = await data.json();
       setProducts(
         result.map((element) => {
